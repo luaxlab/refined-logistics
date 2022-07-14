@@ -1,0 +1,45 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "de.luaxlab",
+		"id": "refinedlogistics",
+		"version": "${version}",
+		"metadata": {
+			"name": "Refined Logistics",
+			"description": "Things that did't make it into Little Logistics.",
+			"contributors": {
+				"LuaX": "Lead"
+			},
+			"contact": {
+				"homepage": "https://luaxlab.de/en/mod/refinedlogistics",
+				"issues": "https://github.com/luaxlab/refined-logistics/issues",
+				"sources": "https://github.com/luaxlab/refined-logisitcs"
+			},
+			"icon": "icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "de.luaxlab.refined.common.core.ModCommon"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=2.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19"
+			},
+			,
+			{
+				"id": "littlelogistics",
+				"versions": "*"
+			}
+		]
+	},
+	"mixin": "refinedlogistics.mixins.json"
+}
